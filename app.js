@@ -54,7 +54,7 @@ app.get('/campgrounds/:id/edit', async (req, res) => {
 });
 app.put('/campgrounds/:id', async (req, res) => {
     const { id } = req.params;
-    const campground = await Campground.findByIdAndUpdate(id, {...req.body.campground }, { new: true });
+    const campground = await Campground.findByIdAndUpdate(id, { ...req.body.campground }, { new: true });
     //we use the three dots(the spread operator) because it is used to take all the properties 
     //from req.body.campground and spread them into a new object. If we don't use the spread operator,
     //the updated campground would not have the new properties from the request body.
