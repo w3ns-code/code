@@ -21,6 +21,28 @@ git commit -m "Ajout du formulaire d'ajout"
 git push origin branche-nom1
 
 git checkout test
-git merge origin/(ton nom)
+git pull origin (test)
+git merge origin (ta branche-nom1)
 
 git push origin test
+
+
+problem we might encounter :
+git push origin main
+To https://github.com/w3ns-code/code.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/w3ns-code/code.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+solution :
+git pull origin main
+git merge main
+git push origin main
+
+OR 
+
+git push origin main --force 
+
