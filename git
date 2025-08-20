@@ -1,0 +1,26 @@
+//First of all
+git init
+git remote add origin https://github.com/w3ns-code/code.git
+git branch -M main
+
+// QUAND TU COMMENCES tu veux être sur ta BRANCHE : 
+git branch pour vérifier avant
+
+// Puis par la suite, pour changer la branche sur laquelle tu veux travailler
+git checkout c'est  
+
+//Avant de commencer à coder faire cette commande pour récupérer le travail dépuis la branche test.
+git pull origin/(test)
+
+(Vous pourrez travailler)
+
+//Faire ça après d'avoir fini de coder
+git add .
+//Commit c'est pour confirmer et enregistrer ces changements localement dans Git laisser un message qui décrirera concrètement ce que vous avez faites
+git commit -m "Ajout du formulaire d'ajout"
+git push origin branche-nom1
+
+git checkout test
+git merge origin/(ton nom)
+
+git push origin test
